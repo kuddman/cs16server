@@ -3,3 +3,5 @@ Before executing the script, adjust the prerequisite variables in cs16server.sh 
 Modify server.cfg and hltv.cfg to your liking
 
 If you don't want to have a hltv server, set hltvport="" in cs16server.sh
+
+Credit goes to the guy who wrote the guide to install a cs 1.6 server on this website https://ixnfo.com/en/launching-and-configuring-counter-strike-1-6-server-on-linux.html which I started out with 
