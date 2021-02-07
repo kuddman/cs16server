@@ -1,1 +1,5 @@
 Before executing the script, adjust the prerequisite variables in cs16server.sh to your desired values.
+
+Modify server.cfg and hltv.cfg to your liking
+
+If you don't want to have a hltv server, set hltvport="" in cs16server.sh
