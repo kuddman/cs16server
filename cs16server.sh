@@ -13,7 +13,7 @@ port="27015"
 #maxplayers of server
 max_players="13"
 
-#optional vars
+#optional varsapt
 #hltv port, needs to be different from $port
 hltvport=""
 #set server password; "" for no password
@@ -26,8 +26,12 @@ fi
 
 #install required binaries and libs
 #screen is not mandatory but if you leave it out, remove "screen -d -S '$user_name' -m " in the runhlds and runhltv files; rest is mandatory
+sudo dpkg --add-architecture i386
 sudo apt update -y
-sudo apt install -y expect screen lib32gcc1 expect lib32z1 lib32gcc1 lib32stdc++6 libsdl2-2.0-0:i386
+sudo apt upgrade -y
+sudo apt update -y
+sudo apt install -y lib32gcc1 lib32z1 lib32stdc++6 libsdl2-2.0-0 expect screen
+sudo apt update -y
 
 #download steam
 sudo mkdir /home/$user_name/SteamCMD
