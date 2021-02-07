@@ -28,8 +28,6 @@ fi
 #screen is not mandatory but if you leave it out, remove "screen -d -S '$user_name' -m " in the runhlds and runhltv files; rest is mandatory
 sudo dpkg --add-architecture i386
 sudo apt update -y
-sudo apt upgrade -y
-sudo apt update -y
 sudo apt install -y lib32gcc1 lib32z1 lib32stdc++6 libsdl2-2.0-0 expect screen
 sudo apt update -y
 
