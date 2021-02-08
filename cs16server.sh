@@ -121,7 +121,7 @@ echo 'WantedBy=default.target' >> /etc/systemd/system/hltv$user_name.service
 
 #sets hltv server to start 40 seconds after boot
 echo '[Unit]' > /etc/systemd/system/hltv$user_name.timer
-echo 'Description=Run foo weekly and on boot' >> /etc/systemd/system/hltv$user_name.timer
+echo 'Description=Run hltv server 40 secs after boot' >> /etc/systemd/system/hltv$user_name.timer
 echo '[Timer]' >> /etc/systemd/system/hltv$user_name.timer
 echo 'OnBootSec=40sec' >> /etc/systemd/system/hltv$user_name.timer
 echo '#OnUnitActiveSec=1w' >> /etc/systemd/system/hltv$user_name.timer
@@ -130,7 +130,7 @@ echo 'WantedBy=timers.target' >> /etc/systemd/system/hltv$user_name.timer
 
 #sets cs 1.6 server to start 30 seconds after boot
 echo '[Unit]' > /etc/systemd/system/$user_name.timer
-echo 'Description=Run foo weekly and on boot' >> /etc/systemd/system/$user_name.timer
+echo 'Description=Run cs 1.6 server 40 secs after boot' >> /etc/systemd/system/$user_name.timer
 echo '[Timer]' >> /etc/systemd/system/$user_name.timer
 echo 'OnBootSec=30sec' >> /etc/systemd/system/$user_name.timer
 echo '#OnUnitActiveSec=1w' >> /etc/systemd/system/$user_name.timer
